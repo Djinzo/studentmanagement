@@ -7,6 +7,6 @@ public class Main {
     public static void main(String[] args) {
         RequestFactory<Student> studentRequestFactory = new RequestFactory<>();
         Student t = new Student("amine","goulzima");
-        System.out.println(studentRequestFactory.insertRequest(t));
+        System.out.println(studentRequestFactory.updateRequest(t));
     }
 }

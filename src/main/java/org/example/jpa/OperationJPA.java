@@ -7,9 +7,9 @@ public interface OperationJPA<T> {
 
     boolean insert(T object) throws SQLException;
 
-    T get(T object);
+    T get(T object) throws SQLException;
 
-    List<T> getBy(String colName,String value);
+    List<T> getBy(T object,String colName,String value);
 
     boolean delete(T object);
 
